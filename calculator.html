@@ -1,0 +1,93 @@
+# Basic-calculator
+This is a basic calculator with operations like addition, multiplication, subtraction ,division and percentage operations.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+           
+            background-image: url("calcu.png");
+            background-color: rgb(157 209 202);
+        }
+        .d{
+            background-color: rgb(196, 195, 241);
+            box-sizing: 40px;
+            padding: 20px;
+            padding-left: 10px;
+            padding-right: 120px;
+        }
+        .tot{
+            width: 300px;
+            margin: auto;
+            height: auto;
+            padding: 40px;
+            background-color: black;
+        }
+        .b{
+            border-color: black;
+            background-color: rgb(204, 202, 190);
+            padding: 8px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 15px;
+        }
+        .p{
+            border-color: black;
+            background-color: rgb(204, 202, 190);
+            padding: 8px;
+            padding-left: 28px;
+            padding-right: 28px;
+            border-radius: 15px;
+        }
+        .e{
+            border-color: black;
+            background-color: rgb(204, 202, 190);
+            padding: 8px;
+            padding-left: 122px;
+            padding-right: 122px;
+            border-radius: 15px;
+            box-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="tot">
+    <form name="cal">
+        <input class="d" type="text" name="display">
+
+        <br><br>
+        <input class="b" type="button" value="7" onclick="cal.display.value+='7'">
+       
+        <input class="b"   type="button" value="8" onclick="cal.display.value+='8'">
+        <input class="b"  type="button" value="9" onclick="cal.display.value+='9'">
+        <input  class="b"   type="button" value="+" onclick="cal.display.value+='+'">
+
+        <br><br>
+        <input class="b"    type="button" value="4" onclick="cal.display.value+='4'">
+        <input  class="b"   type="button" value="5" onclick="cal.display.value+='5'">
+        <input  class="b"   type="button" value="6" onclick="cal.display.value+='6'">
+        <input  class="b"   type="button" value="-" onclick="cal.display.value+='-'">
+
+        <br><br>
+        <input  class="b"   type="button" value="1" onclick="cal.display.value+='1'">
+        <input  class="b"   type="button" value="2" onclick="cal.display.value+='2'">
+        <input  class="b"   type="button" value="3" onclick="cal.display.value+='3'">
+        <input  class="b"   type="button" value="*" onclick="cal.display.value+='*'">
+
+        <br><br>
+        <input  class="b"   type="button" value="0" onclick="cal.display.value+='0'">
+        <input  class="b"   type="button" value="/" onclick="cal.display.value+='/'">
+        <input  class="p"   type="button" value="%" onclick="cal.display.value+='%'">
+        <input  class="b"   type="button" value="=" onclick="cal.display.value=eval(cal.display.value)">
+
+        <br><br>
+        <input  class="e"    type="button" value="ERASE" onclick="cal.display.value=''" id="del">
+
+  </form>
+   </div> 
+</body>
+</html>
